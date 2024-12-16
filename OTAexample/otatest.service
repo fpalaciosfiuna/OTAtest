@@ -1,0 +1,10 @@
+[Unit]
+Description=Webcam USB OpenCV Startup Script
+After=graphical-session.target
+
+[Service]
+ExecStart=/usr/bin/python3 /home/nano/Desktop/util/code/ota/test.py
+Restart=on-failure
+
+[Install]
+WantedBy=default.target
